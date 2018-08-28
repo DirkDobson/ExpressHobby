@@ -1,0 +1,17 @@
+{
+  "development": {
+    "username": "dirkvancouver",
+    "password": null,
+    "database": "music_dev",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+    "test": {
+    "username": "dirkvancouver",
+    "password": null,
+    "database": "music_dev",
+    "host": "5432",
+    "dialect": "postgres"
+  }
+ }
