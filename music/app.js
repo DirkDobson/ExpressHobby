@@ -20,7 +20,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use('/views/music.ejs', music);
+app.use('/music', music);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(methodOverride('_method'));
@@ -34,7 +34,7 @@ app.use(function(req, res, next) {
   next(createError(404));
   next(err);
 });
-app.use('/views/music.ejs', music);
+app.use('/music', music);
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
